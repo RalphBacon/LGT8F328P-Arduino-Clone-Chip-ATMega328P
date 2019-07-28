@@ -1,10 +1,12 @@
 # LGT8F328P Arduino Clone Chip ATMega328P
 #### An improved ATMega328P with this cheap clone Logic Green LGT8F328P
 
-## $8 off your first order at LCSC Electronics with https://lcsc.com/?href=ralphsbacon&source=referral  
+#### $8 off your first order at LCSC Electronics with https://lcsc.com/?href=ralphsbacon&source=referral  
 
-# See https://www.youtube.com/ralphbacon video #156
-####(Direct link to video: )
+## See https://www.youtube.com/ralphbacon video #156
+#### (Direct link to video: )
+
+**Click on any image to see the full-sized version.**  
 
 **So we're looking at the 32MHz Nano-sized drop-in replacement** but I'm using a different sized development board just for ease of use in the video. My device looks like this (and well worth it for experimenting with)  
 <img src="images/LGT8F328P%20Development%20Board.JPG" width="25%">
@@ -15,10 +17,10 @@ But the final device is Nano sized, and a drop-in pin replacement
 Or you can have a Pro-Micro sized device that will require a USB-to-Serial adapter to program.  
 <img src="images/proMicro sized%20LGT8F328P.JPG" width="25%">
 
-The 5 simple steps to get a LGT8F328P-based board running at 32MHz are listed on my GitHub.
+The 6 simple steps to get a LGT8F328P-based board running at 32MHz are listed on my GitHub.
 https://github.com/RalphBacon/LGT8F328P-Arduino-Clone-Chip-ATMega328P
 
-## 5 Simple Steps to get a LGT8F328P-based board it running at 32MHz
+## 6 Simple Steps to get a LGT8F328P-based board running at 32MHz
 
 **1 Download the LogicGreen zipped resources here**  
 https://github.com/LGTMCU/Larduino_HSP  
@@ -42,20 +44,30 @@ Go to Tools, Board and scroll down until you see the next set of LGT8F boards, o
 <img src="images/ArduinoBoardSelection.JPG">
 
 Remember, in your sketch, always add in the #include for the <avr/power.h> as shown in the video.  
-<img src="images/avrPowerLibraryEntry.JPG">  
+<img src="images/avrPowerLibraryEntry.JPG" width="50%">  
 
-Finally, and most importantly, add in the the clock_prescale_set(clock_div_1) statement before anything else, in the setup().  
-<img src="images/PrescaleCodeLine.JPG">  
+Finally, add in this statement before anything else in the setup().  
+<img src="images/PrescaleCodeLine.JPG" width="50%">  
 
 **6 Load the Prime Numer Test sketch**
-in this GitHub, compile and run.  
+from this GitHub, build and run.  
 
 In the Serial Monitor window you should see this:  
-<img src="images/PrimeNumberResults32MHz.JPG">  
+<img src="images/PrimeNumberResults32MHz.JPG" width="50%">  
 
 If you get this instead (and your Serial Monitor is set to the correct speed)  
-<img src="images/BadSpeedSettings.JPG">  
-then you have not successfully implemented the instructions and your board might not be running at 32MHz. Is your Serial Monitor speed set to 9600? Did you select the 32MHz variant of the board? Did you restart your Arduino IDE after replacing the *boards.txt* file? Did you put the unzipped folder under the correct *hardware* folder in the *Arduino Sketches*?
+<img src="images/BadSpeedSettings.JPG" width="50%">  
+then your board might not be running at 32MHz. Is your Serial Monitor speed set to 9600? Did you select the 32MHz variant of the board? Did you restart your Arduino IDE after replacing the *boards.txt* file? Did you put the unzipped folder under the correct *hardware* folder in the *Arduino Sketches*?
+
+### What's this GUID then?  
+Each *LGT8F328P* has a unique GUID (serial number) built in. Useful for encrypting things.  
+To retrieve the number (it's read-only) do this in your sketch setup():  
+*uint32_t guid = *(uint32_t*)&GUID0;*
+
+To display that number in its intended HEX format do this:  
+*Serial.println(guid, HEX);*  
+
+Simples, right?
 
 ## LINKS     LINKS     LINKS     LINKS  
 
