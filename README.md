@@ -5,18 +5,18 @@ $8 off your first order at LCSC Electronics with https://lcsc.com/?href=ralphsba
 
 So we're looking at the 32MHz Nano-sized drop-in replacement but I'm using a different sized development board just for ease of use in the video.
 
-My device looks like this (and well worth it for experimenting with)
-
+My device looks like this (and well worth it for experimenting with)  
+<img src="https://github.com/RalphBacon/LGT8F328P-Arduino-Clone-Chip-ATMega328P/blob/master/Documentation%20Images/LGT8F328P%20Development%20Board.JPG" width="25%">
 
 
 
 But the final device is Nano sized, and a drop-in pin replacement. 
-
+![Nano Sized Board][NanoBoard]
 
 
 
 Or you can have a Pro-Micro sized device that will require a USB-to-Serial adapter to program.
-
+![Pro Micro Sized Board (no USB)][ProMicroBoard]
 
 
 
@@ -90,5 +90,10 @@ Just testing image placement.
 ![Boards.txt image shot][BoardsTextEntry]
 
 [BoardsTextEntry]: https://github.com/RalphBacon/LGT8F328P-Arduino-Clone-Chip-ATMega328P/blob/master/Documentation%20Images/Boards.txt%20entry.JPG
+
+[DevBoard]: <img src="https://github.com/RalphBacon/LGT8F328P-Arduino-Clone-Chip-ATMega328P/blob/master/Documentation%20Images/LGT8F328P%20Development%20Board.JPG" width="50%" height="50%">
+[NanoBoard]: https://github.com/RalphBacon/LGT8F328P-Arduino-Clone-Chip-ATMega328P/blob/master/Documentation%20Images/Nano-sized%20LGTf8328P.JPG
+[ProMicroBoard]:https://github.com/RalphBacon/LGT8F328P-Arduino-Clone-Chip-ATMega328P/blob/master/Documentation%20Images/proMicro%20sized%20LGT8F328P.JPG
+
 
 That was it.
