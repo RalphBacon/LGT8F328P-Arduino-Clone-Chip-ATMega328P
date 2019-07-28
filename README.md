@@ -49,54 +49,28 @@ Load the Prime Numer Test sketch in this GitHub, compile and run. In the Serial 
 <img src="images/PrimeNumberResults32MHz.JPG">
 
 If you get this instead (and your Serial Monitor is set to the correct speed):  
-<img src="images/BadSpeedSetting.JPG">
-then you have not successfully implemented the instructions and your board might not be running at 32MHz, or you have omitted the required prescaler command in your sketch.
+<img src="images/BadSpeedSettings.JPG">
+then you have not successfully implemented the instructions and your board might not be running at 32MHz. Is your Serial Monitor speed set to 9600? Did you select the 32MHz variant of the board? Did you restart your Arduino IDE after replacing the *boards.txt* file? Did you put the unzipped folder under the correct *hardware* folder in the *Arduino Sketches*?
 
+## LINKS     LINKS     LINKS     LINKS
 
-You can prove the speed is correctly set by setting the Serial baud rate to 9600, Serial.begin(9600) and then send something via the USB to your PC, Serial.println("This should be visible."). If you get ???? on the Serial Monitor (and you have set it to 9600) then something is not right. Go back and check each step.  
-
-And to prove you are running at 32MHz, run a simple sketch (eg the Prime Number sketch, in this GitHub repository) using the new 32MHz board description and then using the default one (above it in the list) which runs at 16MHz. You must not have the clock_prescale_set present in the default board sketch (your Serial Monitor speed will be wrong, for starters).  
-
-
-
-
-
-
-
-
-
-
-
-LINKS     LINKS     LINKS     LINKS
-
-KEYES Open Source LGT8F328P Control Module Development Board
+**KEYES Open Source LGT8F328P Control Module Development Board
 https://www.banggood.com/KEYES-Open-Source-LGT8F328P-Control-Module-Development-Board-For-Arduino-p-1400916.html?p=FQ040729393382015118&utm_campaign=25129675&utm_content=3897  
 
-AliExpress Nano/pro Micro replacements  
+**AliExpress Nano/pro Micro replacements  
 LGT8F328P LQFP32 replaces NANO V3.0 HT42B534 chip  
 http://s.click.aliexpress.com/e/cEAUGf6s  
 This seller has both variants (SOP16 & LQFP32)  
 
-Logic Green's GitHub for the support files (also on my GitHub)  
+**Logic Green's GitHub for the support files (also on my GitHub)  
 https://github.com/LGTMCU/Larduino_HSP
 
-
-LGT8F328P Schematic (also copy on my GitHub)  
+** LGT8F328P Schematic (also copy on my GitHub)  
 https://www.electrodragon.com/w/images/a/ac/SN0124_LARDUINO_UNO_V2_20140613.jpg  
 
-Chinese Documentation for what it's worth  
+**Chinese Documentation for what it's worth  
 http://www.logicgreen.io/upload/lgt8fx8p/LGT8FX8P_databook_v1.0.4.pdf
 English version of similar family of chips on my website
 
-Top 10,000 Prime Numbers  
+**Top 10,000 Prime Numbers  
 https://www.di-mgt.com.au/primes10000.txt
-
-Just testing image placement.
-
-![Boards.txt image shot][BoardsTextEntry]
-
-[BoardsTextEntry]: https://github.com/RalphBacon/LGT8F328P-Arduino-Clone-Chip-ATMega328P/blob/master/Documentation%20Images/Boards.txt%20entry.JPG
-
-
-
-That was it.
