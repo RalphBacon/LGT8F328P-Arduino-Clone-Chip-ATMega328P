@@ -7,6 +7,7 @@
 #### (Direct link to video: )
 
 **Click on any image to see the full-sized version in a new tab.**  
+**Links to *all products* at the bottom of this description**
 
 **So we're looking at the 32MHz Nano-sized drop-in replacement** but I'm using a different sized development board just for ease of use in the video. My device looks like this (and well worth it for experimenting with)  
 <img src="images/LGT8F328P%20Development%20Board.JPG" width="25%">
