@@ -34,22 +34,28 @@ Then copy the boards.txt in this GitHub there in place of the one you just delet
 
 ### Testing
 
-Fire up the Arduino IDE (or restart it if already running).
+Fire up the Arduino IDE (or restart it if already running).  
 
-Go to Tools, Board and scroll down until you see the next set of LGT8F boards, one of which will be 32MHz variant you just added. The original LGT8F328P board will now be described as (16MHz)
+Go to Tools, Board and scroll down until you see the next set of LGT8F boards, one of which will be 32MHz variant you just added. The original LGT8F328P board will now be described as (16MHz)  
 <img src="images/ArduinoBoardSelection.JPG">
 
-In your sketch, always add in the #include for the <avr/power.h> as shown in the video.
+In your sketch, always add in the #include for the <avr/power.h> as shown in the video.  
+<img src="images/avrPowerLibraryEntry.JPG">
 
-Finally, and most importantly, add in the the clock_prescale_set(clock_div_1) statement before anything else, in the setup().
+Finally, and most importantly, add in the the clock_prescale_set(clock_div_1) statement before anything else, in the setup().  
+<img src="images/PrescaleCodeLine.JPG">
+
+Load the Prime Numer Test sketch in this GitHub, compile and run. In the Serial Monitor window you should see this:  
+<img src="images/PrimeNumberResults32MHz.JPG">
+
+If you get this instead (and your Serial Monitor is set to the correct speed):  
+<img src="images/BadSpeedSetting.JPG">
+then you have not successfully implemented the instructions and your board might not be running at 32MHz, or you have omitted the required prescaler command in your sketch.
 
 
+You can prove the speed is correctly set by setting the Serial baud rate to 9600, Serial.begin(9600) and then send something via the USB to your PC, Serial.println("This should be visible."). If you get ???? on the Serial Monitor (and you have set it to 9600) then something is not right. Go back and check each step.  
 
-
-
-You can prove the speed is correctly set by setting the Serial baud rate to 9600, Serial.begin(9600) and then send something via the USB to your PC, Serial.println("This should be visible."). If you get ???? on the Serial Monitor (and you have set it to 9600) then something is not right. Go back and check each step.
-
-And to prove you are running at 32MHz, run a simple sketch (eg the Prime Number sketch, in this GitHub repository) using the new 32MHz board description and then using the default one (above it in the list) which runs at 16MHz. You must not have the clock_prescale_set present in the default board sketch (your Serial Monitor speed will be wrong, for starters).
+And to prove you are running at 32MHz, run a simple sketch (eg the Prime Number sketch, in this GitHub repository) using the new 32MHz board description and then using the default one (above it in the list) which runs at 16MHz. You must not have the clock_prescale_set present in the default board sketch (your Serial Monitor speed will be wrong, for starters).  
 
 
 
