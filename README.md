@@ -6,7 +6,7 @@
 ## See https://www.youtube.com/ralphbacon video #156
 #### (Direct link to video: )
 
-**Click on any image to see the full-sized version.**  
+**Click on any image to see the full-sized version in a new tab.**  
 
 **So we're looking at the 32MHz Nano-sized drop-in replacement** but I'm using a different sized development board just for ease of use in the video. My device looks like this (and well worth it for experimenting with)  
 <img src="images/LGT8F328P%20Development%20Board.JPG" width="25%">
@@ -60,11 +60,11 @@ If you get this instead (and your Serial Monitor is set to the correct speed)
 then your board might not be running at 32MHz. Is your Serial Monitor speed set to 9600? Did you select the 32MHz variant of the board? Did you restart your Arduino IDE after replacing the *boards.txt* file? Did you put the unzipped folder under the correct *hardware* folder in the *Arduino Sketches*?
 
 ### What's this GUID then?  
-Each *LGT8F328P* has a unique GUID (serial number) built in. Useful for encrypting things.  
+Each **LGT8F328P** has a unique GUID (serial number) built in. Useful for encrypting things.  
 To retrieve the number (it's read-only) do this in your sketch setup():  
 *uint32_t guid = *(uint32_t*)&GUID0;*
 
-To display that number in its intended HEX format do this:  
+To display that number in its intended **HEX format** do this:  
 *Serial.println(guid, HEX);*  
 
 Simples, right?
