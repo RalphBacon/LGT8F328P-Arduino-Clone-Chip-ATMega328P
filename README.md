@@ -25,6 +25,7 @@ https://github.com/RalphBacon/LGT8F328P-Arduino-Clone-Chip-ATMega328P
 
 **1 Download the LogicGreen zipped resources here**  
 https://github.com/LGTMCU/Larduino_HSP  
+There's a copy of this zipped folder right here on my GitHub
 
 **2 Extract the download (unzip it)**  
 and move the unzipped LGT/avr folder to under the *hardware* folder in your Arduino sketch folder. If you do not have a _hardware_ folder in your Arduino Sketches folder, just create one.
