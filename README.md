@@ -10,8 +10,8 @@ My device looks like this (and well worth it for experimenting with)
 
 
 
-But the final device is Nano sized, and a drop-in pin replacement.  
-<img src="images/Nano-sized%20GTf8328P.JPG" width="25%">
+But the final device is Nano sized, and a drop-in pin replacement  
+<img src="images/Nano-sized%20LGTf8328P.JPG" width="25%">
 
 
 
