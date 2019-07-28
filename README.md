@@ -1,12 +1,12 @@
 # LGT8F328P Arduino Clone Chip ATMega328P
-An improved ATMega328P with this cheap clone Logic Green LGT8F328P
+#### An improved ATMega328P with this cheap clone Logic Green LGT8F328P
 
-$8 off your first order at LCSC Electronics with https://lcsc.com/?href=ralphsbacon&source=referral  
+## $8 off your first order at LCSC Electronics with https://lcsc.com/?href=ralphsbacon&source=referral  
 
-See https://www.youtube.com/ralphbacon video #156
-(Direct link to video: )
+# See https://www.youtube.com/ralphbacon video #156
+####(Direct link to video: )
 
-So we're looking at the 32MHz Nano-sized drop-in replacement but I'm using a different sized development board just for ease of use in the video. My device looks like this (and well worth it for experimenting with)  
+**So we're looking at the 32MHz Nano-sized drop-in replacement** but I'm using a different sized development board just for ease of use in the video. My device looks like this (and well worth it for experimenting with)  
 <img src="images/LGT8F328P%20Development%20Board.JPG" width="25%">
 
 But the final device is Nano sized, and a drop-in pin replacement  
@@ -20,57 +20,62 @@ https://github.com/RalphBacon/LGT8F328P-Arduino-Clone-Chip-ATMega328P
 
 ## 5 Simple Steps to get a LGT8F328P-based board it running at 32MHz
 
-Download the LogicGreen zipped resources here:  
+**1 Download the LogicGreen zipped resources here**  
 https://github.com/LGTMCU/Larduino_HSP  
 
-Extract the download (unzip it) and move the unzipped LGT/avr folder under the *hardware* folder in your Arduino sketch folder. If you do not have a _hardware_ folder in your Arduino Sketches folder, just create one.
+**2 Extract the download (unzip it)**  
+and move the unzipped LGT/avr folder to under the *hardware* folder in your Arduino sketch folder. If you do not have a _hardware_ folder in your Arduino Sketches folder, just create one.
 
 Your structure should look like this:  
 <img src="images/FolderStructure.JPG">
 
-In the Hardware -> LGT -> AVR folder **delete the boards.txt**.
-
+**3 Replace the boards.txt**  
+In the Hardware -> LGT -> AVR folder **delete the boards.txt**.  
 Then copy the boards.txt in this GitHub there in place of the one you just deleted.
 
 ### Testing
 
-Fire up the Arduino IDE (or restart it if already running).  
+**4 Fire up the Arduino IDE (or restart it if already running)**    
 
+**5 Select the right board**  
 Go to Tools, Board and scroll down until you see the next set of LGT8F boards, one of which will be 32MHz variant you just added. The original LGT8F328P board will now be described as (16MHz)  
 <img src="images/ArduinoBoardSelection.JPG">
 
-In your sketch, always add in the #include for the <avr/power.h> as shown in the video.  
-<img src="images/avrPowerLibraryEntry.JPG">
+Remember, in your sketch, always add in the #include for the <avr/power.h> as shown in the video.  
+<img src="images/avrPowerLibraryEntry.JPG">  
 
 Finally, and most importantly, add in the the clock_prescale_set(clock_div_1) statement before anything else, in the setup().  
-<img src="images/PrescaleCodeLine.JPG">
+<img src="images/PrescaleCodeLine.JPG">  
 
-Load the Prime Numer Test sketch in this GitHub, compile and run. In the Serial Monitor window you should see this:  
-<img src="images/PrimeNumberResults32MHz.JPG">
+**6 Load the Prime Numer Test sketch**
+in this GitHub, compile and run.  
 
-If you get this instead (and your Serial Monitor is set to the correct speed):  
-<img src="images/BadSpeedSettings.JPG">
+In the Serial Monitor window you should see this:  
+<img src="images/PrimeNumberResults32MHz.JPG">  
+
+If you get this instead (and your Serial Monitor is set to the correct speed)  
+<img src="images/BadSpeedSettings.JPG">  
 then you have not successfully implemented the instructions and your board might not be running at 32MHz. Is your Serial Monitor speed set to 9600? Did you select the 32MHz variant of the board? Did you restart your Arduino IDE after replacing the *boards.txt* file? Did you put the unzipped folder under the correct *hardware* folder in the *Arduino Sketches*?
 
-## LINKS     LINKS     LINKS     LINKS
+## LINKS     LINKS     LINKS     LINKS  
 
-**KEYES Open Source LGT8F328P Control Module Development Board
+**KEYES Open Source LGT8F328P Control Module Development Board**  
 https://www.banggood.com/KEYES-Open-Source-LGT8F328P-Control-Module-Development-Board-For-Arduino-p-1400916.html?p=FQ040729393382015118&utm_campaign=25129675&utm_content=3897  
 
-**AliExpress Nano/pro Micro replacements  
+**AliExpress Nano/pro Micro replacements**  
 LGT8F328P LQFP32 replaces NANO V3.0 HT42B534 chip  
 http://s.click.aliexpress.com/e/cEAUGf6s  
-This seller has both variants (SOP16 & LQFP32)  
+This seller has both variants (SOP20 & LQFP32) but look around there are other sellers too!  
 
-**Logic Green's GitHub for the support files (also on my GitHub)  
+**Logic Green's GitHub for the support files (also on my GitHub)**  
 https://github.com/LGTMCU/Larduino_HSP
 
-** LGT8F328P Schematic (also copy on my GitHub)  
+**LGT8F328P Schematic (also copy on my GitHub)**  
 https://www.electrodragon.com/w/images/a/ac/SN0124_LARDUINO_UNO_V2_20140613.jpg  
 
-**Chinese Documentation for what it's worth  
+**Chinese Documentation for what it's worth**  
 http://www.logicgreen.io/upload/lgt8fx8p/LGT8FX8P_databook_v1.0.4.pdf
-English version of similar family of chips on my website
+English version of similar family of chips on my GitHub  
 
-**Top 10,000 Prime Numbers  
+**Top 10,000 Prime Numbers**  
 https://www.di-mgt.com.au/primes10000.txt
