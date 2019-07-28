@@ -3,39 +3,34 @@ An improved ATMega328P with this cheap clone Logic Green LGT8F328P
 
 $8 off your first order at LCSC Electronics with https://lcsc.com/?href=ralphsbacon&source=referral  
 
-So we're looking at the 32MHz Nano-sized drop-in replacement but I'm using a different sized development board just for ease of use in the video.
+See https://www.youtube.com/ralphbacon video #156
+(Direct link to video: )
 
-My device looks like this (and well worth it for experimenting with)  
+So we're looking at the 32MHz Nano-sized drop-in replacement but I'm using a different sized development board just for ease of use in the video. My device looks like this (and well worth it for experimenting with)  
 <img src="images/LGT8F328P%20Development%20Board.JPG" width="25%">
-
-
 
 But the final device is Nano sized, and a drop-in pin replacement  
 <img src="images/Nano-sized%20LGTf8328P.JPG" width="25%">
 
-
-
 Or you can have a Pro-Micro sized device that will require a USB-to-Serial adapter to program.  
 <img src="images/proMicro sized%20LGT8F328P.JPG" width="25%">
 
+The 5 simple steps to get a LGT8F328P-based board running at 32MHz are listed on my GitHub.
+https://github.com/RalphBacon/LGT8F328P-Arduino-Clone-Chip-ATMega328P
 
-
-
-
-
-
-
-
-
-The steps to get a LGT8F328P-based board running at 32MHz are listed on my GitHub.
-Steps to get a LGT8F328P-based board it running at 32MHz
+## 5 Simple Steps to get a LGT8F328P-based board it running at 32MHz
 
 Download the LogicGreen zipped resources here:  
 https://github.com/LGTMCU/Larduino_HSP  
 
-Extract the download (unzip it) amd move the hardware/LGT/avr folder to the *hardware* folder in your Arduino sketch folder. This means you should have the original Arduino folder PLUS this new LGT folder too.
+Extract the download (unzip it) amd move the hardware/LGT/avr folder to the *hardware* folder in your Arduino sketch folder. This means you should have the original Arduino folder PLUS this new LGT folder too. If you do not have a _hardware_ folder in your Arduino Sketches folder, just create one.
 
-Open the Hardware -> LGT -> AVR folder and edit the boards.txt.
+Your structure should look like this:  
+<img src="images/FolderStructure.jpg">
+
+In the Hardware -> LGT -> AVR folder delete the boards.txt.
+
+Copy the boards.txt in this GitHub there in place of the one you just deleted.
 
 Add the contents of my 32MHz board text file (in this GitHub) into it. Save and close.
 
