@@ -26,21 +26,24 @@ https://github.com/LGTMCU/Larduino_HSP
 Extract the download (unzip it) amd move the hardware/LGT/avr folder to the *hardware* folder in your Arduino sketch folder. This means you should have the original Arduino folder PLUS this new LGT folder too. If you do not have a _hardware_ folder in your Arduino Sketches folder, just create one.
 
 Your structure should look like this:  
-<img src="images/FolderStructure.jpg">
+<img src="images/FolderStructure.JPG">
 
 In the Hardware -> LGT -> AVR folder delete the boards.txt.
 
 Copy the boards.txt in this GitHub there in place of the one you just deleted.
 
-Add the contents of my 32MHz board text file (in this GitHub) into it. Save and close.
-
 Fire up the Arduino IDE (or restart it if already running).
 
-Go to Tools, Board and scroll down until you see the next set of LGT8F boards, one of which will be 32MHz variant you just added.
+Go to Tools, Board and scroll down until you see the next set of LGT8F boards, one of which will be 32MHz variant you just added. The original LGT8F328P board will now be described as (16MHz)
 
-Add in the #include for the <avr/power.h> as shown in the video.
+
+In your sketch, always add in the #include for the <avr/power.h> as shown in the video.
 
 Finally, and most importantly, add in the the clock_prescale_set(clock_div_1) statement before anything else, in the setup().
+
+
+
+
 
 You can prove the speed is correctly set by setting the Serial baud rate to 9600, Serial.begin(9600) and then send something via the USB to your PC, Serial.println("This should be visible."). If you get ???? on the Serial Monitor (and you have set it to 9600) then something is not right. Go back and check each step.
 
