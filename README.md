@@ -45,7 +45,7 @@ Then copy the boards.txt in this GitHub there in place of the one you just delet
 Go to Tools, Board and scroll down until you see the next set of LGT8F boards, one of which will be 32MHz variant you just added. The original LGT8F328P board will now be described as (16MHz)  
 <img src="images/ArduinoBoardSelection.JPG">
 
-Remember, in your sketch, always add in the #include for the <avr/power.h> as shown in the video.  
+Remember, in your future sketches, always add in the #include for the <avr/power.h> as shown in the video.  
 <img src="images/avrPowerLibraryEntry.JPG" width="50%">  
 
 Finally, add in this statement before anything else in the setup().  
@@ -93,3 +93,11 @@ English version of similar family of chips on my GitHub
 
 **Top 10,000 Prime Numbers**  
 https://www.di-mgt.com.au/primes10000.txt
+
+If you like this video please give it a thumbs up, share it and if you're not already subscribed please consider doing so and joining me on my Arduinite journey
+
+My channel and blog are here:  
+\------------------------------------------------------------------  
+https://www.youtube.com/RalphBacon  
+https://ralphbacon.blog  
+\------------------------------------------------------------------
