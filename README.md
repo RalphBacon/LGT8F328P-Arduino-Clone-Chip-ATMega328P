@@ -23,19 +23,21 @@ https://github.com/RalphBacon/LGT8F328P-Arduino-Clone-Chip-ATMega328P
 Download the LogicGreen zipped resources here:  
 https://github.com/LGTMCU/Larduino_HSP  
 
-Extract the download (unzip it) amd move the hardware/LGT/avr folder to the *hardware* folder in your Arduino sketch folder. This means you should have the original Arduino folder PLUS this new LGT folder too. If you do not have a _hardware_ folder in your Arduino Sketches folder, just create one.
+Extract the download (unzip it) and move the unzipped LGT/avr folder under the *hardware* folder in your Arduino sketch folder. If you do not have a _hardware_ folder in your Arduino Sketches folder, just create one.
 
 Your structure should look like this:  
 <img src="images/FolderStructure.JPG">
 
-In the Hardware -> LGT -> AVR folder delete the boards.txt.
+In the Hardware -> LGT -> AVR folder **delete the boards.txt**.
 
-Copy the boards.txt in this GitHub there in place of the one you just deleted.
+Then copy the boards.txt in this GitHub there in place of the one you just deleted.
+
+### Testing
 
 Fire up the Arduino IDE (or restart it if already running).
 
 Go to Tools, Board and scroll down until you see the next set of LGT8F boards, one of which will be 32MHz variant you just added. The original LGT8F328P board will now be described as (16MHz)
-
+<img src="images/ArduinoBoardSelection.JPG">
 
 In your sketch, always add in the #include for the <avr/power.h> as shown in the video.
 
