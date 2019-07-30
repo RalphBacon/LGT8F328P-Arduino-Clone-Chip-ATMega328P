@@ -4,7 +4,7 @@
 #### $8 off your first order at LCSC Electronics with https://lcsc.com/?href=ralphsbacon&source=referral  
 
 ## See https://www.youtube.com/ralphbacon video #156
-#### (Direct link to video: )
+#### (Direct link to video: https://youtu.be/Myfeqrl3QP0)
 
 **Click on any image to see the full-sized version in a new tab.**  
 **Links to *all products* at the bottom of this description**
