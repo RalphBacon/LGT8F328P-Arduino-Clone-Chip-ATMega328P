@@ -1,4 +1,4 @@
-# See: http://code.google.com/p/arduino/wiki/Platforms
+# See: http://code.google.com/p/arduino/wiki/Platforms 
 
 ##############################################################
 lardu_328p48.name= LGT8F328P-LQFP48 MiniEVB 
