@@ -71,6 +71,11 @@ To display that number in its intended **HEX format** do this:
 
 Simples, right?
 
+### Breaking news!  
+David Buezas has written an entire boards description for all frequencies **and** it allows us to dispense with setting the clock prescaler.  
+
+See https://github.com/dbuezas/lgt8fx for full details.  
+
 ## LINKS     LINKS     LINKS     LINKS  
 
 **KEYES Open Source LGT8F328P Control Module Development Board**  
