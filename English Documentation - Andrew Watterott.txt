@@ -1,0 +1,5 @@
+A much better, human translated version of the documentation, thanks to Andrew Watterott
+
+https://github.com/watterott/LGT8F328P-Testing
+
+Thanks Andrew!
