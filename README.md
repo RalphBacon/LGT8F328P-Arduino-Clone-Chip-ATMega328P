@@ -78,6 +78,9 @@ See https://github.com/dbuezas/lgt8fx for full details.
 
 ## LINKS     LINKS     LINKS     LINKS  
 
+An excellent source of **English datasheets and documentation by Andrew Watterott**  
+https://github.com/watterott/LGT8F328P-Testing  
+
 **KEYES Open Source LGT8F328P Control Module Development Board**  
 https://www.banggood.com/KEYES-Open-Source-LGT8F328P-Control-Module-Development-Board-For-Arduino-p-1400916.html?p=FQ040729393382015118&utm_campaign=25129675&utm_content=3897  
 
