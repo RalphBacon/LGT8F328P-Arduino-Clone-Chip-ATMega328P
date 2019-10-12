@@ -1,4 +1,4 @@
-A much better, human translated version of the documentation, thanks to Andrew Watterott
+A much better, human translated version of the documentation, thanks to Watterott Electronic.
 
 https://github.com/watterott/LGT8F328P-Testing
 
